@@ -1,0 +1,106 @@
+.create-poll-container {
+  font-family: Arial, sans-serif;
+  background-color: #e1e4e4;
+  padding: 20px;
+  width: 33.33%;
+  max-width: 425px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 100px; /* Increased bottom margin */
+}
+
+.create-poll-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group:last-of-type {
+  margin-bottom: 30px; /* Increased gap before the button */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-option-btn {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #2196f3;
+  border-radius: 4px;
+}
+
+.create-poll-btn {
+  background-color: #2196f3;
+  border: none;
+  padding: 12px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px; /* Increased gap after the last form group */
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .create-poll-container {
+    padding: 12px;
+    width: 92%;
+    margin: 10px auto;
+    margin-bottom: 150px; /* Increased bottom margin for mobile */
+  }
+
+  .create-poll-container h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group input[type="text"] {
+    padding: 10px;
+  }
+
+  .form-group:last-of-type {
+    margin-bottom: 25px; /* Adjusted for mobile */
+  }
+
+  .add-option-btn {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .create-poll-btn {
+    margin-top: 25px !important; /* Adjusted for mobile */
+    padding: 14px 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}

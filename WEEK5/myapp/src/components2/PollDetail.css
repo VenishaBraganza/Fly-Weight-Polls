@@ -1,0 +1,113 @@
+.poll-detail-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.poll-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.poll-question {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.vote-button {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.poll-tags {
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+
+.poll-table-container,
+.poll-chart-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .poll-detail-container {
+    padding: 15px;
+  }
+
+  .poll-question {
+    font-size: 1.2rem;
+    margin-bottom: 15px; /* Consistent spacing */
+  }
+
+  .vote-button {
+    font-size: 0.9rem;
+    margin-bottom: 15px; /* Consistent spacing */
+  }
+
+  /* Adjust DataGrid for mobile */
+  .MuiDataGrid-root {
+    font-size: 0.8rem;
+  }
+
+  .MuiDataGrid-columnHeaders {
+    min-height: 40px !important;
+  }
+
+  .MuiDataGrid-cell {
+    padding: 8px !important;
+  }
+
+  .poll-content {
+    flex-direction: column;
+  }
+
+  .poll-table-container,
+  .poll-chart-container {
+    width: 100%;
+    margin-bottom: 15px; /* Consistent spacing */
+  }
+
+  .poll-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-top: -15px; /* Adjust margin to align with table */
+  }
+
+  .poll-chart-container > div {
+    width: auto !important; /* Ensure the chart takes the correct width */
+    margin: 0 auto; /* Center the chart */
+  }
+
+  .poll-representation-title {
+    text-align: left;
+    margin-top: 20px; /* Add space above the poll representation text */
+  }
+}
+
+@media (min-width: 601px) {
+  .poll-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .poll-table-container {
+    width: 70%;
+  }
+
+  .poll-chart-container {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+  }
+
+  .poll-representation-title {
+    text-align: right;
+  }
+}

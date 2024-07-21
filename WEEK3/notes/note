@@ -1,0 +1,43 @@
+Change your models (in models.py).
+Run python manage.py makemigrations to create migrations for those changes
+Run python manage.py migrate to apply those changes to the database.
+
+polls/views.py
+ return HttpResponse("Hello, world. You're at the polls index.")
+
+to add search box:search_fields = ["question_text"]
+      
+      safe=False
+
+
+       'question_text': poll.question_text,
+            'pub_date': poll.pub_date,
+
+
+
+            {
+                  "Question": "Who is the G.O.A.T footballer",
+                  "OptionVote":{
+                      "Messi": "0",
+                      "CR7": "0"
+                  },
+                  "Tags": ["football", "sports"]
+               }
+
+               
+
+{
+    "Question": "Who will win the Champions League season?",
+    "QuestionID": 5,
+    "Tags": [
+        "cricket",
+        "sports"
+    ],
+    "OptionVote": {
+        "Real Madrid": 3,
+        "Bayern": 0,
+        "PSG": 3
+    }
+}
+    
+http://127.0.0.1:8000/polls/
